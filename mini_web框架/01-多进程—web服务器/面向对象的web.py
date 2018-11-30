@@ -1,6 +1,8 @@
 import socket
 import re
 import multiprocessing
+import time
+
 
 class WSGIserver(object):
 
@@ -15,8 +17,7 @@ class WSGIserver(object):
         # 3. 变为监听套接字
         self.tcp_server_socket.listen(128)
 
-
-    def service_client(self,new_socket):
+    def service_client(self, new_socket):
         """为这个客户端返回数据"""
 
         # 1. 接收浏览器发送过来的请求 ，即http请求
@@ -42,27 +43,38 @@ class WSGIserver(object):
                 file_name = "/index.html"
 
         # 2. 返回http格式的数据，给浏览器
+        # 如果请求的资源不是.py结尾的就认为是静态资源
+        if not file_name.endswith(".py"):
+            try:
+                f = open("./html" + file_name, "rb")
+            except:
+                response = "HTTP/1.1 404 NOT FOUND\r\n"
+                response += "\r\n"
+                response += "------file not found-----"
+                new_socket.send(response.encode("utf-8"))
+            else:
+                html_content = f.read()
+                f.close()
+                # 2.1 准备发送给浏览器的数据---header
+                response = "HTTP/1.1 200 OK\r\n"
+                response += "\r\n"
+                # 2.2 准备发送给浏览器的数据---boy
+                # response += "hahahhah"
 
-        try:
-            f = open("./html" + file_name, "rb")
-        except:
-            response = "HTTP/1.1 404 NOT FOUND\r\n"
-            response += "\r\n"
-            response += "------file not found-----"
-            new_socket.send(response.encode("utf-8"))
+                # 将response header发送给浏览器
+                new_socket.send(response.encode("utf-8"))
+                # 将response body发送给浏览器
+                new_socket.send(html_content)
         else:
-            html_content = f.read()
-            f.close()
-            # 2.1 准备发送给浏览器的数据---header
-            response = "HTTP/1.1 200 OK\r\n"
-            response += "\r\n"
-            # 2.2 准备发送给浏览器的数据---boy
-            # response += "hahahhah"
+            # 如果是已.py结尾那么就认为是动态请求
+            header="HTTP/1.1 200 OK\r\n"
+            header+="\r\n"
 
-            # 将response header发送给浏览器
+            body="江姗姗爱你哟%s"%time.ctime()
+
+            response=header+body
+
             new_socket.send(response.encode("utf-8"))
-            # 将response body发送给浏览器
-            new_socket.send(html_content)
 
         # 关闭套接
         new_socket.close()
@@ -88,16 +100,14 @@ class WSGIserver(object):
         tcp_server_socket.close()
 
 
-
-
 def main():
     """
     控制整体，创建一个web服务器对象，然后调用这个对象的run方法
     :return:None
     """
-    wsgi_server=WSGIserver()
+    wsgi_server = WSGIserver()
     wsgi_server.runforever()
 
-if __name__=="__main__":
-    main()
 
+if __name__ == "__main__":
+    main()
