@@ -47,7 +47,7 @@ class WSGIserver(object):
         # 如果请求的资源不是.py结尾的就认为是静态资源
         if not file_name.endswith(".py"):
             try:
-                f = open("./html" + file_name, "rb")
+                f = open("../html" + file_name, "rb")
             except:
                 response = "HTTP/1.1 404 NOT FOUND\r\n"
                 response += "\r\n"

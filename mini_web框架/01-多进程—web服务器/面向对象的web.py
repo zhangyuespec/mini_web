@@ -70,7 +70,7 @@ class WSGIserver(object):
             header="HTTP/1.1 200 OK\r\n"
             header+="\r\n"
 
-            body="江姗姗爱你哟%s"%time.ctime()
+            body="江姗姗哟%s"%time.ctime()
 
             response=header+body
 
