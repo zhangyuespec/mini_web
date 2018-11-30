@@ -69,6 +69,7 @@ class WSGIserver(object):
         else:
 
             env=dict()#空字典
+            env['PATH_INFO']=file_name
             body=test.application(env,self.set_response_header) #接耦合
 
             # 如果是已.py结尾那么就认为是动态请求
