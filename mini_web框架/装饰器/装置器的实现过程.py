@@ -6,7 +6,7 @@ def set_func(func):
         func()
     return call_funct
 
-#@set_func
+# @set_func
 def test_1():
     print("----test1----")
 
