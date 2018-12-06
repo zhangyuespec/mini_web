@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ba95e99-7eb3-45a7-9a06-a1ba6b5f985a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/修改端口框架.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_web框架/mini_web框架添加路由和MySQL功能/路由/带有参数的装饰器.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.swp" beforeDir="false" afterPath="$PROJECT_DIR$/.swp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,14 +13,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/new_py_code$web_server__3_.coverage" NAME="web_server (3) Coverage Results" MODIFIED="1543583713654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/05-让web服务器支持WSGI协议" />
+    <SUITE FILE_PATH="coverage/new_py_code$pytest_in__py.coverage" NAME="pytest in 装饰器演示.py Coverage Results" MODIFIED="1543799178367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/装饰器" />
     <SUITE FILE_PATH="coverage/new_py_code$web.coverage" NAME="面向对象的web Coverage Results" MODIFIED="1543571587459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/01-多进程—web服务器" />
     <SUITE FILE_PATH="coverage/new_py_code$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1543573196571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版" />
     <SUITE FILE_PATH="coverage/new_py_code$web_server__2_.coverage" NAME="web_server (2) Coverage Results" MODIFIED="1543573254934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版" />
     <SUITE FILE_PATH="coverage/new_py_code$web_server__4_.coverage" NAME="web_server (4) Coverage Results" MODIFIED="1543632416664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架" />
+    <SUITE FILE_PATH="coverage/new_py_code$.coverage" NAME="类的装饰器 Coverage Results" MODIFIED="1543843377648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/装饰器" />
     <SUITE FILE_PATH="coverage/new_py_code$web_server__1_.coverage" NAME="web_server (1) Coverage Results" MODIFIED="1543571891973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/03-将web服务器和逻辑处理的代码分开" />
     <SUITE FILE_PATH="coverage/new_py_code$_web.coverage" NAME="多进程_web服务器 Coverage Results" MODIFIED="1543496397493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架" />
     <SUITE FILE_PATH="coverage/new_py_code$web_server.coverage" NAME="web_server Coverage Results" MODIFIED="1543584352394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样" />
-    <SUITE FILE_PATH="coverage/new_py_code$test.coverage" NAME="test Coverage Results" MODIFIED="1543498311578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/01-多进程—web服务器" />
+    <SUITE FILE_PATH="coverage/new_py_code$test.coverage" NAME="test Coverage Results" MODIFIED="1543667288344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mini_web框架/闭包" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1787446464">
@@ -30,28 +30,29 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="20" />
+          <entry key="py" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="20" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2862" />
+          <entry key="py" value="4109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2862" />
+          <entry key="Python" value="4109" />
         </counts>
       </usages-collector>
     </session>
@@ -59,45 +60,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/web_server.py">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰器演示.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+              <caret selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/test.py">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰的作用——来统计一个函数的运行时间.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="308">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/test.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/对有参数无返回值的函数进行装饰.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/web_server.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰器修饰不定长函数.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="448">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/有返回值，通用装饰器.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/多个装饰器对同一个函数进行装饰.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/类的装饰器.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/修改端口框架.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/mini_web框架添加路由和MySQL功能/路由/带有参数的装饰器.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5236">
+              <caret line="238" selection-start-line="238" selection-end-line="239" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装置器的实现过程.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -131,6 +181,18 @@
         <option value="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/test.py" />
         <option value="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/修改端口框架.py" />
         <option value="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/web_server.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/闭包/test.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/闭包/闭包.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/闭包/闭包修改数据.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/装置器的实现过程.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/装饰的作用——来统计一个函数的运行时间.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/装饰器演示.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/对有参数无返回值的函数进行装饰.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/装饰器修饰不定长函数.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/有返回值，通用装饰器.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/多个装饰器对同一个函数进行装饰.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/装饰器/类的装饰器.py" />
+        <option value="$PROJECT_DIR$/mini_web框架/mini_web框架添加路由和MySQL功能/路由/带有参数的装饰器.py" />
       </list>
     </option>
   </component>
@@ -140,10 +202,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="67" />
     <option name="y" value="32" />
-    <option name="width" value="927" />
+    <option name="width" value="1853" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -169,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,12 +247,13 @@
               <item name="new_py_code" type="b2602c69:ProjectViewProjectNode" />
               <item name="new_py_code" type="462c0819:PsiDirectoryNode" />
               <item name="mini_web框架" type="462c0819:PsiDirectoryNode" />
-              <item name="08-运行时指定web服务器端口以及框架" type="462c0819:PsiDirectoryNode" />
+              <item name="mini_web框架添加路由和MySQL功能" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,8 +275,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.web_server (4)">
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.闭包">
+    <configuration name="闭包" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="new_py_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -222,12 +284,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/闭包" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/闭包/闭包.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,7 +298,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="web_server (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="类的装饰器" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="new_py_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,12 +306,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/装饰器" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版/web_server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/装饰器/类的装饰器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,86 +320,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="web_server (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest for 闭包修改数据.test_1.test_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="new_py_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/05-让web服务器支持WSGI协议" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/闭包" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/05-让web服务器支持WSGI协议/web_server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;闭包修改数据.test_1.test_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="web_server (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest in 闭包修改数据.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="new_py_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/闭包" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/web_server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mini_web框架/闭包/闭包修改数据.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="web_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest in 装饰器演示.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="new_py_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mini_web框架/装饰器" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mini_web框架/06-通过传递字典实现浏览器请求的不一样响应的不一样/web_server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/mini_web框架/装饰器/装饰器演示.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.web_server (2)" />
-      <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.web_server (3)" />
-      <item itemvalue="Python.web_server" />
-      <item itemvalue="Python.web_server (4)" />
+      <item itemvalue="Python.闭包" />
+      <item itemvalue="Python tests.pytest in 闭包修改数据.py" />
+      <item itemvalue="Python tests.pytest for 闭包修改数据.test_1.test_2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.web_server (4)" />
-        <item itemvalue="Python.web_server" />
-        <item itemvalue="Python.web_server (3)" />
-        <item itemvalue="Python.web_server (2)" />
-        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python tests.pytest in 闭包修改数据.py" />
+        <item itemvalue="Python tests.pytest for 闭包修改数据.test_1.test_2" />
+        <item itemvalue="Python.闭包" />
       </list>
     </recent_temporary>
   </component>
@@ -354,6 +394,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 08m 24s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 08m 49s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 09m 37s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 14m 02s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 20m 44s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 21m 39s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 24m 23s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_闭包修改数据_py - 2018.12.01 at 21h 24m 44s.xml">
+      <configuration name="pytest in 闭包修改数据.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_装饰器演示_py - 2018.12.03 at 09h 05m 53s.xml">
+      <configuration name="pytest in 装饰器演示.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_装饰器演示_py - 2018.12.03 at 09h 06m 18s.xml">
+      <configuration name="pytest in 装饰器演示.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -364,10 +436,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="32" width="1853" height="1048" extended-state="6" />
+    <frame x="67" y="32" width="1853" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1389661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17509727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,8 +452,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32924107" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25669643" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32924107" />
       <window_info anchor="bottom" id="Run" order="12" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -402,9 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -412,29 +481,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" selection-start-line="4" selection-end-line="86" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mini_web框架/03-将web服务器和逻辑处理的代码分开/面向对象的web.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/03-将web服务器和逻辑处理的代码分开/面向对象的web.py" />
     <entry file="file://$PROJECT_DIR$/mini_web框架/01-多进程—web服务器/面向对象的web.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2604">
           <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -449,29 +503,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mini_web框架/画小猪佩奇.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/画小猪佩奇.py" />
     <entry file="file://$PROJECT_DIR$/mini_web框架/04-将web服务器和逻辑处理的代码分开--升级版/web_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,16 +552,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/闭包/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/闭包/闭包.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/闭包/闭包修改数据.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mini_web框架/08-运行时指定web服务器端口以及框架/web_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="2044">
+          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰器演示.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰的作用——来统计一个函数的运行时间.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/对有参数无返回值的函数进行装饰.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装饰器修饰不定长函数.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/有返回值，通用装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/多个装饰器对同一个函数进行装饰.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5236">
+          <caret line="238" selection-start-line="238" selection-end-line="239" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/装置器的实现过程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/装饰器/类的装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_web框架/mini_web框架添加路由和MySQL功能/路由/带有参数的装饰器.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
