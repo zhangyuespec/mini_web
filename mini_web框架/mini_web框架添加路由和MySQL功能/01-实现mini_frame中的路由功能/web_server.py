@@ -13,7 +13,7 @@ class WSGIServer(object):
         self.tcp_server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
         # 2. 绑定
-        self.tcp_server_socket.bind(("", port))
+        self.tcp_server_socket.bind(("172.16.70.64", port))
 
         # 3. 变为监听套接字
         self.tcp_server_socket.listen(128)

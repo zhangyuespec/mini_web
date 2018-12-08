@@ -1,11 +1,5 @@
 import re
 
-"""
-URL_FUNC_DICT = {
-    "/index.py": index,
-    "/center.py": center
-}
-"""
 
 URL_FUNC_DICT = dict()
 
@@ -50,14 +44,6 @@ def application(env, start_response):
     file_name = env['PATH_INFO']
     # file_name = "/index.py"
 
-    """
-    if file_name == "/index.py":
-        return index()
-    elif file_name == "/center.py":
-        return center()
-    else:
-        return 'Hello World! 我爱你中国....'
-    """
 
     try:
         # func = URL_FUNC_DICT[file_name]
