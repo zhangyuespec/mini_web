@@ -3,5 +3,5 @@
 或者 python3 xxx.py 7890 mini_frame:application
 
 author:specyue
-date:18
+date:xxx
 versioin:1.0
